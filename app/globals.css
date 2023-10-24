@@ -3,3 +3,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.mobile-headings {
+  @apply text-3xl uppercase font-bold;
+}
+
+.mobile-list {
+  @apply border-l-2 border-gray-500 ml-5 pl-5 py-2 mt-2 capitalize;
+}

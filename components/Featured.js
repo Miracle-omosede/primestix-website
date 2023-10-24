@@ -52,7 +52,7 @@ const Featured = () => {
               <div className="w-full">
                 <Link
                   href="/page"
-                  className="w-full flex items-center justify-between"
+                  className="w-full flex items-center justify-between py-3"
                 >
                   <span className="uppercase font-raleway">Learn more</span>
                   <span>
@@ -103,7 +103,7 @@ const Featured = () => {
               <div className="w-full">
                 <Link
                   href="/page"
-                  className="w-full flex items-center justify-between"
+                  className="w-full flex items-center justify-between py-3"
                 >
                   <span className="uppercase">Learn more</span>
                   <span>
@@ -155,7 +155,7 @@ const Featured = () => {
               <div className="w-full">
                 <Link
                   href="/page"
-                  className="w-full flex items-center justify-between"
+                  className="w-full flex items-center justify-between py-3"
                 >
                   <span className="uppercase">Learn more</span>
                   <span>

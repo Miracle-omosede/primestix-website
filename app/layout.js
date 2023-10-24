@@ -1,6 +1,5 @@
 import FullScreenNavbar from '@/components/FullScreenNavbar'
 import './globals.css'
-import '@/styles/main.scss'
 import 'remixicon/fonts/remixicon.css'
 
 

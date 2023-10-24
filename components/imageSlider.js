@@ -6,6 +6,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 // import next image
 import Image from "next/image";
+import '../styles/main.scss'
 
 // Import Swiper styles
 import "swiper/css";
@@ -36,7 +37,7 @@ export default function ImageSlider() {
           swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null,
         }}
         autoplay={{
-          delay: 25000,
+          delay: 2500,
           disableOnInteraction: false,
         }}
         modules={[FreeMode, Autoplay, Thumbs]}
@@ -127,7 +128,7 @@ export default function ImageSlider() {
       <Swiper
         onSwiper={setThumbsSwiper}
         spaceBetween={10}
-        slidesPerView={4}
+        slidesPerView={3}
         freeMode={true}
         watchSlidesProgress={true}
         modules={[FreeMode, Autoplay, Thumbs]}
