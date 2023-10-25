@@ -20,6 +20,14 @@ import Button from "./Button";
 
 // import required modules
 import { FreeMode, Autoplay, Thumbs } from "swiper/modules";
+// const mySwiper = {
+//   height: '20%', // Note: You should use quotes for the value
+//   boxSizing: 'border-box', // CSS properties use camelCase in JavaScript
+//   padding: '10px 0',
+//   position: 'absolute',
+//   top: '-11rem',
+//   left: '10%',
+// };
 
 export default function ImageSlider() {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
@@ -27,10 +35,6 @@ export default function ImageSlider() {
   return (
     <>
       <Swiper
-        style={{
-          "--swiper-navigation-color": "#fff",
-          "--swiper-pagination-color": "#fff",
-        }}
         spaceBetween={10}
         navigation={false}
         thumbs={{
@@ -132,7 +136,7 @@ export default function ImageSlider() {
         freeMode={true}
         watchSlidesProgress={true}
         modules={[FreeMode, Autoplay, Thumbs]}
-        className="mySwiper"
+        className="mySwiper-first"
       >
         <SwiperSlide>
           <Image layout="fill" src="/home-1.jpg" />

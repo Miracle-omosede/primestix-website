@@ -7,7 +7,7 @@ import Image from "next/image";
 function MobileView({ open, setOpen }) {
   return (
     <div
-      className={`z-[9999] absolute top-0 left-0 w-screen md:pb-0 pb-4 md:h-[75vh] overflow-x-hidden bg-white transform ${
+      className={`z-[9999] absolute top-0 left-0 w-screen md:pb-0 pb-4 md:h-[100vh] overflow-x-hidden bg-white transform ${
         open ? "-translate-y-0" : "-translate-y-full"
       } transition-transform duration-300 ease-in-out filter font-raleway`}
     >
@@ -101,14 +101,23 @@ function MobileView({ open, setOpen }) {
             </div>
           </div>
           <div className="md:col-span-6 col-span-0 h-full relative">
-            <div className="h-full w-full absolute md:flex hidden -top-[7rem] left-0">
+            <div className="h-full w-full absolute md:flex hidden items-center justify-center -top-[0rem] left-0">
               <Image
                 src="/home-5.jpg"
                 width={1000}
                 height={1000}
                 className="w-full h-[70vh]"
               />
-            </div>
+        
+            </div>      
+            <div className="absolute top-0 left-0 flex items-center justify-center h-full w-full">
+                <div className="glass-bg text-white w-3/4 flex flex-col gap-3 py-10 px-7">
+                  <h1 className="font-bold text-xl">THE PREMIER LUXURY PROPERTY DEVELOPER IN DUBAI</h1>
+                  <p className="text-sm font-semibold">
+                  DAMAC Properties has been shaping the Middle East’s luxury real estate market since 2002, delivering iconic residential, commercial and leisure properties for sale in Dubai, across the region and beyond.
+                  </p>
+                </div>
+              </div>
           </div>
         </div>
       </div>

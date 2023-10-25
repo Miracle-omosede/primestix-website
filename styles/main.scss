@@ -62,7 +62,7 @@
     width: 100%;
   }
   
-  .mySwiper {
+  .mySwiper-first {
     height: 20%;
     box-sizing: border-box;
     padding: 10px 0;
@@ -71,7 +71,7 @@
     left: 10%;
   }
   
-  .mySwiper .swiper-slide {
+  .mySwiper-first .swiper-slide {
     width: 15% !important ;
     height: 100%;
     transition: transform 0.3s;
@@ -89,7 +89,7 @@
 }
 
   
-  .mySwiper .swiper-slide-thumb-active {
+  .mySwiper-first .swiper-slide-thumb-active {
     opacity: 1;
   }
   
