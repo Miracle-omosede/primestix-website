@@ -162,7 +162,7 @@ const FullScreenNavbar = () => {
 
         <div className="relative">
           <div class="border rounded overflow-hidden hidden md:flex">
-            <input type="text" class="px-4 py-2" placeholder="Search..." />
+            <input type="text" className="px-4 py-2" placeholder="Search..." />
             <button class="flex items-center justify-center px-4 border-l">
               <svg
                 class="h-4 w-4 text-grey-dark"

@@ -13,7 +13,7 @@ export default function Home() {
     <div className="w-full h-auto">
     <Featured/>
     </div>
-    <div className="bg-[#ffd573] relative w-full h-screen ">
+    <div className="bg-[#fdf8ee] relative w-full h-auto py-52">
       <Slider/>
     </div>
     </main>
