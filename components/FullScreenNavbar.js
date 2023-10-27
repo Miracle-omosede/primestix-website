@@ -18,7 +18,7 @@ function MobileView({ open, setOpen }) {
               <div className="flex flex-col md:flex-row justify-between">
                 <div>
                   <Link href="/" className="mobile-headings">
-                    <span></span>
+                    <span><i class="ri-community-line"></i></span>
                     <span>communities</span>
                   </Link>
                   <ul className="mobile-list flex flex-col gap-2">
@@ -35,7 +35,7 @@ function MobileView({ open, setOpen }) {
                 </div>
                 <div className="mr-16">
                   <Link href="/" className="mobile-headings">
-                    <span></span>
+                    <span><i class="ri-question-line"></i></span>
                     <span>Why Damic?</span>
                   </Link>
                   <ul className="mobile-list flex flex-col gap-2">
@@ -61,7 +61,7 @@ function MobileView({ open, setOpen }) {
                 <div className="flex flex-col md:flex-row justify-between w-full pr-16">
                   <div>
                     <Link href="/" className="mobile-headings">
-                      <span></span>
+                      <span><i class="ri-building-2-line"></i></span>
                       <span>projects</span>
                     </Link>
                     <ul className="mobile-list flex gap-2 flex-col">
@@ -75,11 +75,11 @@ function MobileView({ open, setOpen }) {
                   </div>
                   <div className="flex flex-col justify-start items-start mt-5 mr-16">
                     <Link href="/" className="mobile-headings">
-                      <span></span>
+                      <span><i class="ri-price-tag-3-line"></i></span>
                       <span>offers</span>
                     </Link>
                     <Link href="/" className="mobile-headings">
-                      <span></span>
+                      <span><i class="ri-camera-lens-line"></i></span>
                       <span>3d tour</span>
                     </Link>
                   </div>
@@ -110,7 +110,7 @@ function MobileView({ open, setOpen }) {
               />
         
             </div>      
-            <div className="absolute top-0 left-0 flex items-center justify-center h-full w-full">
+            <div className="absolute top-0 left-0 md:flex hidden items-center justify-center h-full w-full">
                 <div className="glass-bg text-white w-3/4 flex flex-col gap-3 py-10 px-7">
                   <h1 className="font-bold text-xl">THE PREMIER LUXURY PROPERTY DEVELOPER IN DUBAI</h1>
                   <p className="text-sm font-semibold">
