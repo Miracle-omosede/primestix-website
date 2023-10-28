@@ -27,11 +27,11 @@ export default function Slider() {
       <div className=" mx-auto px-5 uppercase two alt-two mb-10">
         <h1 className="primary-heading font-bold font-raleway uppercase leading-[3rem]">
           Featured Housing
-          <span className="leading-4">
+        </h1>
+        <span className="leading-5 text-center flex items-center justify-center py-3 text-gray-500">
             Get to see experience some of our
             <br className="md:block hidden " /> feautered and new properties
           </span>
-        </h1>
       </div>
       <Swiper
         spaceBetween={30}

@@ -23,13 +23,13 @@ function MobileView({ open, setOpen }) {
                   </Link>
                   <ul className="mobile-list flex flex-col gap-2">
                     <li>
-                      <Link href="/">Damic Lagoon</Link>
+                      <Link href="/" className="link-item" >Damic Lagoon</Link>
                     </li>
                     <li>
-                      <Link href="/">Damic Hills</Link>
+                      <Link href="/" className="link-item">Damic Hills</Link>
                     </li>
                     <li>
-                      <Link href="/">Damic Hills 2</Link>
+                      <Link href="/" className="link-item">Damic Hills 2</Link>
                     </li>
                   </ul>
                 </div>
@@ -40,19 +40,19 @@ function MobileView({ open, setOpen }) {
                   </Link>
                   <ul className="mobile-list flex flex-col gap-2">
                     <li>
-                      <Link href="/">About Damic</Link>
+                      <Link href="/" className="link-item">About Damic</Link>
                     </li>
                     <li>
-                      <Link href="/">Founder's Message</Link>
+                      <Link href="/" className="link-item">Founder's Message</Link>
                     </li>
                     <li>
-                      <Link href="/">Investor relations</Link>
+                      <Link href="/" className="link-item">Investor relations</Link>
                     </li>
                     <li>
-                      <Link href="/">Csr</Link>
+                      <Link href="/" className="link-item">Csr</Link>
                     </li>
                     <li>
-                      <Link href="/">hotels & resorts</Link>
+                      <Link href="/" className="link-item">hotels & resorts</Link>
                     </li>
                   </ul>
                 </div>
@@ -66,10 +66,10 @@ function MobileView({ open, setOpen }) {
                     </Link>
                     <ul className="mobile-list flex gap-2 flex-col">
                       <li>
-                        <Link href="/">all projects</Link>
+                        <Link href="/" className="link-item">all projects</Link>
                       </li>
                       <li>
-                        <Link href="/">find properties</Link>
+                        <Link href="/" className="link-item">find properties</Link>
                       </li>
                     </ul>
                   </div>
@@ -78,7 +78,7 @@ function MobileView({ open, setOpen }) {
                       <span><i class="ri-price-tag-3-line"></i></span>
                       <span>offers</span>
                     </Link>
-                    <Link href="/" className="mobile-headings">
+                    <Link href="/" className="mobile-headings" >
                       <span><i class="ri-camera-lens-line"></i></span>
                       <span>3d tour</span>
                     </Link>

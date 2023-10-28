@@ -1,4 +1,5 @@
 import Featured from "@/components/Featured";
+import News from "@/components/News";
 import Slider from "@/components/Slides";
 import ImageSlider from "@/components/imageSlider";
 
@@ -13,8 +14,11 @@ export default function Home() {
     <div className="w-full h-auto">
     <Featured/>
     </div>
-    <div className="bg-[#fdf8ee] relative w-full h-auto py-52">
+    <div className="bg-[#fdf8ee] relative w-full h-auto py-40">
       <Slider/>
+    </div>
+    <div className="bg-[#47391e] py-40" >
+    <News/>
     </div>
     </main>
   )
