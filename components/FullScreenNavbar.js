@@ -89,12 +89,12 @@ function MobileView({ open, setOpen }) {
               <div className="flex flex-col md:flex-row mt-5  md:items-center gap-3 md:gap-6 w-full justify-center">
                 <div>
                   <h1 className="uppercase md:text-3xl font-bold">
-                    Making things happen
+                     <span className="">Making</span> things happen
                   </h1>
-                  <p className="font-semibold md:text-xl">
+                  <p className="font-semibold md:text-xl text-[#955626]">
                     The next big idea might be yours.                  </p>
                 </div>
-                <button className="uppercase border-2 border-black shadow-lg py-2 md:py-4 px-2 md:px-3 font-semibold text-white hover:text-black bg-black hover:bg-white transition-all md:w-auto w-2/4 duration-300 ease-in-out">
+                <button className="uppercase border-2 border-[#914c18] shadow-lg py-2 md:py-4 px-2 md:px-3 font-semibold text-white hover:text-black bg-[#ad6229] hover:bg-white transition-all md:w-auto w-2/4 duration-300 ease-in-out">
                   Send your idea
                 </button>
               </div>

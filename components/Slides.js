@@ -26,7 +26,7 @@ export default function Slider() {
     <div className="flex flex-col items-center justify-ceneter mx-auto md:w-[1100px] h-full mb-5">
       <div className=" mx-auto px-5 uppercase two alt-two mb-10">
         <h1 className="primary-heading font-bold font-raleway uppercase leading-[3rem]">
-          Featured Products
+          Featured Housing
           <span className="leading-4">
             Get to see experience some of our
             <br className="md:block hidden " /> feautered and new properties
