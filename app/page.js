@@ -1,4 +1,5 @@
 import Featured from "@/components/Featured";
+import Footer from "@/components/Footer";
 import News from "@/components/News";
 import Slider from "@/components/Slides";
 import ImageSlider from "@/components/imageSlider";
@@ -20,6 +21,7 @@ export default function Home() {
     <div className="bg-[#47391e] py-40" >
     <News/>
     </div>
+    <Footer/>
     </main>
   )
 }

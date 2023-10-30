@@ -2,6 +2,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import Modal from "./Modal";
 
 // mobile view
 function MobileView({ open, setOpen }) {
@@ -126,6 +127,7 @@ function MobileView({ open, setOpen }) {
 }
 
 const FullScreenNavbar = () => {
+  const [openModal, setOpenModal] = useState(false)
   const [open, setOpen] = useState(false);
   const [ isOpen, setIsOpen] = useState(false)
   return (
@@ -180,11 +182,11 @@ const FullScreenNavbar = () => {
           <div className="">
             <ul className="flex items-center justify-center gap-4">
               <li className="md:flex items-center justify-center hidden">
-                <Link href="home" className="flex items-center">
+                <button className="flex items-center openModalBtn">
                   <i class="ri-calendar-2-line"></i>
                   &nbsp;
                   <span className="uppercase font-[500]">schedule a call</span>
-                </Link>
+                </button>
               </li>
 
               <li className="hidden items-center md:flex justify-center">
@@ -262,6 +264,7 @@ const FullScreenNavbar = () => {
           </div>
         </div>
       </div>
+      <Modal/>
     </div>
   );
 };
