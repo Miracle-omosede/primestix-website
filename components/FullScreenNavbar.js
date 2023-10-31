@@ -182,7 +182,9 @@ const FullScreenNavbar = () => {
           <div className="">
             <ul className="flex items-center justify-center gap-4">
               <li className="md:flex items-center justify-center hidden">
-                <button className="flex items-center openModalBtn" onClick={}>
+                <button className="flex items-center openModalBtn" onClick={() => {
+                  setOpenModal(true)
+                }}>
                   <i class="ri-calendar-2-line"></i>
                   &nbsp;
                   <span className="uppercase font-[500]">schedule a call</span>
@@ -264,7 +266,7 @@ const FullScreenNavbar = () => {
           </div>
         </div>
       </div>
-      <Modal/>
+      { openModal && <Modal closeModal={setOpenModal}/>}
     </div>
   );
 };

@@ -1,10 +1,11 @@
 import React from 'react'
+import "./modal.css"
 
-const Modal = () => {
+const Modal = ({closeModal}) => {
   return (
     <div className='modalBackground'>
         <div className='modalContainer'>
-            <button>X</button>
+            <button onClick={() => closeModal(false)}>X</button>
             <div className='title'>
                 <h1>Are you sure you want to continue?</h1>
             </div>
