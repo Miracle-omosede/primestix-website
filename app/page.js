@@ -4,6 +4,7 @@ import News from "@/components/News";
 import OurTeam from "@/components/OurTeam";
 import Slider from "@/components/Slides";
 import ImageSlider from "@/components/imageSlider";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -14,7 +15,7 @@ export default function Home() {
       <div className="w-full h-auto">
         <Featured />
       </div>
-      <div className="bg-[#fdf8ee] relative w-full h-auto py-40">
+      <div className="relative w-full bg-pattern h-auto px-5 py-40">
         <Slider />
       </div>
       <div className="relative bg-[#47391e] pt-52 ">
