@@ -10,6 +10,7 @@ import '../styles/main.scss'
 
 // Import Swiper styles
 import "swiper/css";
+import 'swiper/css/effect-fade';
 import "swiper/css/free-mode";
 import "swiper/css/navigation";
 import "swiper/css/thumbs";
@@ -19,7 +20,7 @@ import Button from "./Button";
 // import './styles.css';
 
 // import required modules
-import { FreeMode, Autoplay, Thumbs } from "swiper/modules";
+import { FreeMode, Autoplay, Thumbs, EffectFade, Navigation } from "swiper/modules";
 // const mySwiper = {
 //   height: '20%', // Note: You should use quotes for the value
 //   boxSizing: 'border-box', // CSS properties use camelCase in JavaScript
@@ -37,14 +38,15 @@ export default function ImageSlider() {
       <Swiper
         spaceBetween={10}
         navigation={false}
+        effect={'fade'}
         thumbs={{
           swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null,
         }}
         autoplay={{
-          delay: 2500,
+          delay: 3000,
           disableOnInteraction: false,
         }}
-        modules={[FreeMode, Autoplay, Thumbs]}
+        modules={[EffectFade, FreeMode, Autoplay, Thumbs, Navigation]}
         className="mySwiper2"
       >
         <SwiperSlide>

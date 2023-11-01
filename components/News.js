@@ -16,13 +16,8 @@ import { Pagination, Navigation, Autoplay } from 'swiper/modules';
 
 const News = () => {
     return (
-        <div>
-            <div className='two alt-two text-white'>
-                <h1 className='primary-heading' style={{color: "white"}}>News</h1>
-                <span className="leading-5 text-center flex items-center justify-center py-3 text-white font-raleway text-lg">
-            Know a thing or two about us and our new offers.
-          </span>
-            </div>
+        <div className='relative'>
+
           <Swiper
             slidesPerView={1}
             spaceBetween={30}
