@@ -53,7 +53,7 @@ export default function ImageSlider() {
           <Image
             className="slightly-zoomed-image"
             layout="fill"
-            src="/home-1.jpg"
+            src="/pic-1.jpg"
           />
           <div className="absolute text-white top-0 z-10 flex flex-col md:grid grid-cols-12 justify-center md:items-center w-full h-full left-[10%]">
             <div className="flex md:gap-5 gap-3 flex-col md:col-span-6 col-span-12 md:items-start items-start font-raleway ">
@@ -97,7 +97,7 @@ export default function ImageSlider() {
           <Image
             className="slightly-zoomed-image"
             layout="fill"
-            src="/hero-home-2.jpg"
+            src="/pic-6.jpg"
           />
           <div className="absolute text-white top-0 z-10 flex flex-col md:grid grid-cols-12 justify-center md:items-center w-full h-full left-[10%]">
             <div className="flex md:gap-5 gap-3 flex-col md:col-span-6 col-span-12 md:items-start items-start font-raleway ">
@@ -141,7 +141,7 @@ export default function ImageSlider() {
           <Image
             className="slightly-zoomed-image"
             layout="fill"
-            src="/hero-home-3.jpg"
+            src="/pic-4.jpg"
           />
           <div className="absolute text-white top-0 z-10 flex flex-col md:grid grid-cols-12 justify-center md:items-center w-full h-full left-[10%]">
             <div className="flex md:gap-5 gap-3 flex-col md:col-span-6 col-span-12 md:items-start items-start font-raleway ">
@@ -185,7 +185,7 @@ export default function ImageSlider() {
           <Image
             className="slightly-zoomed-image"
             layout="fill"
-            src="/hero-home-4.jpg"
+            src="/pic-7.jpg"
           />
           <div className="absolute text-white top-0 z-10 flex flex-col md:grid grid-cols-12 justify-center md:items-center w-full h-full left-[10%]">
             <div className="flex md:gap-5 gap-3 flex-col md:col-span-6 col-span-12 md:items-start items-start font-raleway ">
@@ -229,7 +229,7 @@ export default function ImageSlider() {
           <Image
             className="slightly-zoomed-image"
             layout="fill"
-            src="/hero-home-5.jpg"
+            src="/pic-5.jpg"
           />
           <div className="absolute text-white top-0 z-10 flex flex-col md:grid grid-cols-12 justify-center md:items-center w-full h-full left-[10%]">
             <div className="flex md:gap-5 gap-3 flex-col md:col-span-6 col-span-12 md:items-start items-start font-raleway ">
@@ -281,23 +281,23 @@ export default function ImageSlider() {
         className="mySwiper-first"
       >
         <SwiperSlide>
-          <Image layout="fill" src="/home-1.jpg" />
+          <Image layout="fill" src="/pic-1.jpg" />
           <div className="home__card-shadow"></div>
         </SwiperSlide>
         <SwiperSlide>
-          <Image layout="fill" src="/hero-home-2.jpg" />
+          <Image layout="fill" src="/pic-6.jpg" />
           <div className="home__card-shadow"></div>
         </SwiperSlide>
         <SwiperSlide>
-          <Image layout="fill" src="/hero-home-3.jpg" />
+          <Image layout="fill" src="/pic-4.jpg" />
           <div className="home__card-shadow"></div>
         </SwiperSlide>
         <SwiperSlide>
-          <Image layout="fill" src="/hero-home-4.jpg" />
+          <Image layout="fill" src="/pic-7.jpg" />
           <div className="home__card-shadow"></div>
         </SwiperSlide>
         <SwiperSlide>
-          <Image layout="fill" src="/hero-home-5.jpg" />
+          <Image layout="fill" src="/pic-5.jpg" />
           <div className="home__card-shadow"></div>
         </SwiperSlide>
       </Swiper>

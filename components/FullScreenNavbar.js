@@ -158,7 +158,7 @@ const FullScreenNavbar = () => {
             />
           </div>
           <Link href="/" className="uppercase font-[500]">
-            LOGO
+            <Image src="/horizontal-logo.png" width={100} height={50}  alt="logo"/>
           </Link>
         </div>
 
