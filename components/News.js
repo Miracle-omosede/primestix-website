@@ -1,190 +1,244 @@
-"use client"
-import React, { useRef, useState } from 'react';
+"use client";
+import React, { useRef, useState } from "react";
 // Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide } from "swiper/react";
 
-import Image from 'next/image';
+import Image from "next/image";
 
-import "../styles/news-slider.scss"
+import "../styles/news-slider.scss";
 
 // Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/pagination';
+import "swiper/css";
+import "swiper/css/pagination";
 
 // import required modules
-import { Pagination, Navigation, Autoplay } from 'swiper/modules';
+import { Pagination, Navigation, Autoplay } from "swiper/modules";
 
 const News = () => {
-    return (
-        <div className='relative'>
+  return (
+    <div className="relative">
+              <div className='two alt-two'>
+                <h1 className='primary-heading' style={{color: "white"}}>News</h1>
+            </div>
+      <Swiper
+        slidesPerView={1}
+        spaceBetween={30}
+        pagination={{
+          clickable: true,
+        }}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        modules={[Pagination, Navigation, Autoplay]}
+        navigation={true}
+        breakpoints={{
+          480: {
+            slidesPerView: 1,
+          },
+          600: {
+            slidesPerView: 2,
+          },
+          750: {
+            slidesPerView: 3,
+          },
+          1100: {
+            slidesPerView: 3,
+          },
+        }}
+        className="mySwiper3 news-slider"
+      >
+        <SwiperSlide className="news-slider__wrp swiper-wrapper">
+          <div className="news-slider__item swiper-slide">
+            <a href="#" className="news__item">
+              <div className="news-date">
+                <span className="news-date__title">24</span>
+                <span className="news-date__txt">May</span>
+              </div>
+              <div className="news__title">Lorem Ipsum Dolor Sit Amed</div>
 
-          <Swiper
-            slidesPerView={1}
-            spaceBetween={30}
-            pagination={{
-              clickable: true,
-            }}
-            autoplay={{
-                delay: 2500,
-                disableOnInteraction: false,
-              }}
-            modules={[Pagination, Navigation, Autoplay]}
-            navigation={true}
-            breakpoints={{
-                480: {
-                  slidesPerView: 1,
-                },
-                600: {
-                  slidesPerView: 2,
-                },
-                750: {
-                  slidesPerView: 3,
-                },
-                1100: {
-                  slidesPerView: 3,
-                },
-              }}
-            className="mySwiper3 news-slider"
-          >
-            <SwiperSlide  className="news-slider__wrp swiper-wrapper">
-            <div className="news-slider__item swiper-slide">
-        <a href="#" className="news__item">
-          <div className="news-date">
-            <span className="news-date__title">24</span>
-            <span className="news-date__txt">May</span>
-          </div>
-          <div className="news__title">
-            Lorem Ipsum Dolor Sit Amed
-          </div>
+              <p className="news__txt">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s...
+              </p>
 
-          <p className="news__txt">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...
-          </p>
+              <div className="news__img object-cover">
+                <Image
+                  src="/hero-home-2.jpg"
+                  className="object-cover"
+                  width={500}
+                  height={100}
+                />
+              </div>
+            </a>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide className="news-slider__wrp swiper-wrapper">
+          {" "}
+          <div className="news-slider__item swiper-slide">
+            <a href="#" className="news__item">
+              <div className="news-date">
+                <span className="news-date__title">24</span>
+                <span className="news-date__txt">May</span>
+              </div>
+              <div className="news__title">Lorem Ipsum Dolor Sit Amed</div>
 
-          <div className="news__img object-cover">
-            <Image src="/hero-home-2.jpg" className='object-cover' width={500} height={100} />
-          </div>
-        </a>
-      </div>
-            </SwiperSlide>
-            <SwiperSlide  className="news-slider__wrp swiper-wrapper"> <div className="news-slider__item swiper-slide">
-        <a href="#" className="news__item">
-          <div className="news-date">
-            <span className="news-date__title">24</span>
-            <span className="news-date__txt">May</span>
-          </div>
-          <div className="news__title">
-            Lorem Ipsum Dolor Sit Amed
-          </div>
+              <p className="news__txt">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s...
+              </p>
 
-          <p className="news__txt">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...
-          </p>
+              <div className="news__img object-cover">
+                <Image
+                  src="/hero-home-4.jpg"
+                  className="object-cover"
+                  width={500}
+                  height={100}
+                />
+              </div>
+            </a>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide className="news-slider__wrp swiper-wrapper">
+          {" "}
+          <div className="news-slider__item swiper-slide">
+            <a href="#" className="news__item">
+              <div className="news-date">
+                <span className="news-date__title">24</span>
+                <span className="news-date__txt">May</span>
+              </div>
+              <div className="news__title">Lorem Ipsum Dolor Sit Amed</div>
 
-          <div className="news__img object-cover">
-            <Image src="/hero-home-4.jpg" className='object-cover' width={500} height={100} />
-          </div>
-        </a>
-      </div></SwiperSlide>
-            <SwiperSlide  className="news-slider__wrp swiper-wrapper"> <div className="news-slider__item swiper-slide">
-        <a href="#" className="news__item">
-          <div className="news-date">
-            <span className="news-date__title">24</span>
-            <span className="news-date__txt">May</span>
-          </div>
-          <div className="news__title">
-            Lorem Ipsum Dolor Sit Amed
-          </div>
+              <p className="news__txt">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s...
+              </p>
 
-          <p className="news__txt">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...
-          </p>
+              <div className="news__img object-cover">
+                <Image
+                  src="/hero-home-5.jpg"
+                  className="object-cover"
+                  width={500}
+                  height={100}
+                />
+              </div>
+            </a>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide className="news-slider__wrp swiper-wrapper">
+          {" "}
+          <div className="news-slider__item swiper-slide">
+            <a href="#" className="news__item">
+              <div className="news-date">
+                <span className="news-date__title">24</span>
+                <span className="news-date__txt">May</span>
+              </div>
+              <div className="news__title">Lorem Ipsum Dolor Sit Amed</div>
 
-          <div className="news__img object-cover">
-            <Image src="/hero-home-5.jpg" className='object-cover' width={500} height={100} />
-          </div>
-        </a>
-      </div></SwiperSlide>
-            <SwiperSlide  className="news-slider__wrp swiper-wrapper"> <div className="news-slider__item swiper-slide">
-        <a href="#" className="news__item">
-          <div className="news-date">
-            <span className="news-date__title">24</span>
-            <span className="news-date__txt">May</span>
-          </div>
-          <div className="news__title">
-            Lorem Ipsum Dolor Sit Amed
-          </div>
+              <p className="news__txt">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s...
+              </p>
 
-          <p className="news__txt">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...
-          </p>
+              <div className="news__img object-cover">
+                <Image
+                  src="/hero-home-4.jpg"
+                  className="object-cover"
+                  width={500}
+                  height={100}
+                />
+              </div>
+            </a>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide className="news-slider__wrp swiper-wrapper">
+          {" "}
+          <div className="news-slider__item swiper-slide">
+            <a href="#" className="news__item">
+              <div className="news-date">
+                <span className="news-date__title">24</span>
+                <span className="news-date__txt">May</span>
+              </div>
+              <div className="news__title">Lorem Ipsum Dolor Sit Amed</div>
 
-          <div className="news__img object-cover">
-            <Image src="/hero-home-4.jpg" className='object-cover' width={500} height={100} />
-          </div>
-        </a>
-      </div></SwiperSlide>
-            <SwiperSlide  className="news-slider__wrp swiper-wrapper"> <div className="news-slider__item swiper-slide">
-        <a href="#" className="news__item">
-          <div className="news-date">
-            <span className="news-date__title">24</span>
-            <span className="news-date__txt">May</span>
-          </div>
-          <div className="news__title">
-            Lorem Ipsum Dolor Sit Amed
-          </div>
+              <p className="news__txt">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s...
+              </p>
 
-          <p className="news__txt">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...
-          </p>
-
-          <div className="news__img object-cover">
-            <Image src="/hero-home-3.jpg" className='object-cover' width={500} height={100} />
+              <div className="news__img object-cover">
+                <Image
+                  src="/hero-home-3.jpg"
+                  className="object-cover"
+                  width={500}
+                  height={100}
+                />
+              </div>
+            </a>
           </div>
-        </a>
-      </div></SwiperSlide>
-            <SwiperSlide  className="news-slider__wrp swiper-wrapper"> <div className="news-slider__item swiper-slide">
-        <a href="#" className="news__item">
-          <div className="news-date">
-            <span className="news-date__title">24</span>
-            <span className="news-date__txt">May</span>
-          </div>
-          <div className="news__title">
-            Lorem Ipsum Dolor Sit Amed
-          </div>
+        </SwiperSlide>
+        <SwiperSlide className="news-slider__wrp swiper-wrapper">
+          {" "}
+          <div className="news-slider__item swiper-slide">
+            <a href="#" className="news__item">
+              <div className="news-date">
+                <span className="news-date__title">24</span>
+                <span className="news-date__txt">May</span>
+              </div>
+              <div className="news__title">Lorem Ipsum Dolor Sit Amed</div>
 
-          <p className="news__txt">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...
-          </p>
+              <p className="news__txt">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s...
+              </p>
 
-          <div className="news__img object-cover">
-            <Image src="/hero-home-5.jpg" className='object-cover' width={500} height={100} />
+              <div className="news__img object-cover">
+                <Image
+                  src="/hero-home-5.jpg"
+                  className="object-cover"
+                  width={500}
+                  height={100}
+                />
+              </div>
+            </a>
           </div>
-        </a>
-      </div></SwiperSlide>
-            <SwiperSlide  className="news-slider__wrp swiper-wrapper"> <div className="news-slider__item swiper-slide">
-        <a href="#" className="news__item">
-          <div className="news-date">
-            <span className="news-date__title">24</span>
-            <span className="news-date__txt">May</span>
+        </SwiperSlide>
+        <SwiperSlide className="news-slider__wrp swiper-wrapper">
+          {" "}
+          <div className="news-slider__item swiper-slide">
+            <a href="#" className="news__item">
+              <div className="news-date">
+                <span className="news-date__title">24</span>
+                <span className="news-date__txt">May</span>
+              </div>
+              <div className="news__title">Lorem Ipsum Dolor Sit Amed</div>
+
+              <p className="news__txt">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s...
+              </p>
+
+              <div className="news__img object-cover">
+                <Image
+                  src="/hero-home-3.jpg"
+                  className="object-cover"
+                  width={500}
+                  height={100}
+                />
+              </div>
+            </a>
           </div>
-          <div className="news__title">
-            Lorem Ipsum Dolor Sit Amed
-          </div>
+        </SwiperSlide>
+      </Swiper>
+    </div>
+  );
+};
 
-          <p className="news__txt">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...
-          </p>
-
-          <div className="news__img object-cover">
-            <Image src="/hero-home-3.jpg" className='object-cover' width={500} height={100} />
-          </div>
-        </a>
-      </div></SwiperSlide>
-
-          </Swiper>
-        </div>
-      );
-}
-
-export default News
+export default News;
