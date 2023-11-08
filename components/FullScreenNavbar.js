@@ -92,10 +92,10 @@ function MobileView({ open, setOpen }) {
                   <h1 className="uppercase md:text-3xl font-bold">
                      <span className="">Making</span> things happen
                   </h1>
-                  <p className="font-semibold md:text-xl text-[#955626]">
+                  <p className="font-semibold md:text-xl text-[#A18830]">
                     The next big idea might be yours.                  </p>
                 </div>
-                <button className="uppercase border-2 border-[#914c18] shadow-lg py-2 md:py-4 px-2 md:px-3 font-semibold text-white hover:text-black bg-[#ad6229] hover:bg-white transition-all md:w-auto w-2/4 duration-300 ease-in-out">
+                <button className="uppercase border-2 border-[#A18830] shadow-lg py-2 md:py-4 px-2 md:px-3 font-semibold text-white hover:text-black bg-[#A18830] hover:bg-white transition-all md:w-auto w-2/4 duration-300 ease-in-out">
                   Send your idea
                 </button>
               </div>

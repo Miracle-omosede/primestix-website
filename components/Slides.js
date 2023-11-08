@@ -55,7 +55,7 @@ export default function Slider() {
               className="object-cover absolute top-0 left-0"
               layout="fill"
             />
-            <div className="absolute left-0 flex w-full items-end justify-start bottom-0 py-16 md:py-10 my-auto px-16 md:h h-48 glass-bg2 text-white">
+            <div className="absolute left-0 flex w-full items-end justify-start bottom-0 py-5 md:py-10 my-auto px-16 md:h-40 glass-bg2 text-white">
               <div className="flex justify-between gap-3 md:gap-0 flex-col w-full ">
                 <div className="font-raleway flex flex-col gap-2 items-start justify-between">
                   <span className="font-bold md:text-4xl text-2xl capitalize">
@@ -68,7 +68,7 @@ export default function Slider() {
                 <div>
                   <Link
                     href="/page"
-                    className="w-full flex items-center gap-3 my-2 hover:gap-6 font-bold font-raleway transition-all duration-300 text-sm text-blue-400"
+                    className="w-full flex items-center md:justify-start justify-center gap-3 my-2 hover:gap-6 font-bold font-raleway transition-all duration-300 text-sm text-white"
                   >
                     <span className="capitalize">Learn more</span>
                     <span>
@@ -100,20 +100,20 @@ export default function Slider() {
               className="object-cover absolute top-0 left-0"
               layout="fill"
             />
-              <div className="absolute left-0 flex w-full items-end justify-start bottom-0 py-16 md:py-10 my-auto px-16 md:h h-48 glass-bg2 text-white">
+              <div className="absolute left-0 flex w-full items-end justify-start bottom-0 py-5 md:py-10 my-auto px-16 md:h-40 glass-bg2 text-white">
               <div className="flex justify-between gap-3 md:gap-0 flex-col w-full ">
                 <div className="font-raleway flex flex-col gap-2 items-start justify-between">
                   <span className="font-bold md:text-4xl text-2xl capitalize">
                     Damac Tower views
                   </span>
                   <span className="capitalize md:text-xl text-md font-semibold">
-                    Chicago, United States.
+                    London, United Kingdom
                   </span>
                 </div>
                 <div>
                   <Link
                     href="/page"
-                    className="w-full flex items-center gap-3 my-2 hover:gap-6 font-bold font-raleway transition-all duration-300 text-sm text-blue-400"
+                    className="w-full flex items-center md:justify-start justify-center gap-3 my-2 hover:gap-6 font-bold font-raleway transition-all duration-300 text-sm text-white"
                   >
                     <span className="capitalize">Learn more</span>
                     <span>
@@ -145,20 +145,21 @@ export default function Slider() {
               className="object-cover absolute top-0 left-0"
               layout="fill"
             />
-             <div className="absolute left-0 flex w-full items-end justify-start bottom-0 py-16 md:py-10 my-auto px-16 md:h h-48 glass-bg2 text-white">
+              
+              <div className="absolute left-0 flex w-full items-end justify-start bottom-0 py-5 md:py-10 my-auto px-16 md:h-40 glass-bg2 text-white">
               <div className="flex justify-between gap-3 md:gap-0 flex-col w-full ">
                 <div className="font-raleway flex flex-col gap-2 items-start justify-between">
                   <span className="font-bold md:text-4xl text-2xl capitalize">
-                    Damac Tall Building.
+                    Damac Tower views
                   </span>
                   <span className="capitalize md:text-xl text-md font-semibold">
-                    Rome, Italy.
+                    London, United Kingdom
                   </span>
                 </div>
                 <div>
                   <Link
                     href="/page"
-                    className="w-full flex items-center gap-3 my-2 hover:gap-6 font-bold font-raleway transition-all duration-300 text-sm text-blue-400"
+                    className="w-full flex items-center md:justify-start justify-center gap-3 my-2 hover:gap-6 font-bold font-raleway transition-all duration-300 text-sm text-white"
                   >
                     <span className="capitalize">Learn more</span>
                     <span>
