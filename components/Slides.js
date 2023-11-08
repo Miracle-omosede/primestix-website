@@ -24,15 +24,19 @@ export default function Slider() {
   };
   return (
     <div className="flex flex-col items-center justify-ceneter mx-auto md:w-[1100px] h-full mb-5">
-      <div className=" mx-auto px-5 uppercase four alt-four mb-10">
+      <div className=" mx-auto px-5 uppercase four alt-four mb-3">
         <h1 className="second-heading font-bold font-raleway uppercase leading-[3rem]">
           Featured Housing
         </h1>
+        
         {/* <span className="leading-5 text-center flex items-center justify-center py-3 text-gray-500">
             Get to see experience some of our
             <br className="md:block hidden " /> feautered and new properties
           </span> */}
       </div>
+      <span className="capitalize text-white my-5 font-semibold text-center text-xl font-raleway px-32">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </span>
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
@@ -55,6 +59,19 @@ export default function Slider() {
               className="object-cover absolute top-0 left-0"
               layout="fill"
             />
+             <div className="glass-bg2  absolute py-3 my-5 mx-5 px-5 top-0 right-0 text-white rounded-[50px]">
+              <Link href="./" className="flex items-center justify-between gap-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  className="w-6 h-6"
+                >
+                  <path d="M4.5 4.5a3 3 0 00-3 3v9a3 3 0 003 3h8.25a3 3 0 003-3v-9a3 3 0 00-3-3H4.5zM19.94 18.75l-2.69-2.69V7.94l2.69-2.69c.944-.945 2.56-.276 2.56 1.06v11.38c0 1.336-1.616 2.005-2.56 1.06z" />
+                </svg>
+                <span>Take 3D Tour</span>
+              </Link>
+            </div>
             <div className="absolute left-0 flex w-full items-end justify-start bottom-0 py-5 md:py-10 my-auto px-16 md:h-40 glass-bg2 text-white">
               <div className="flex justify-between gap-3 md:gap-0 flex-col w-full ">
                 <div className="font-raleway flex flex-col gap-2 items-start justify-between">
@@ -100,7 +117,20 @@ export default function Slider() {
               className="object-cover absolute top-0 left-0"
               layout="fill"
             />
-              <div className="absolute left-0 flex w-full items-end justify-start bottom-0 py-5 md:py-10 my-auto px-16 md:h-40 glass-bg2 text-white">
+             <div className="glass-bg2  absolute py-3 my-5 mx-5 px-5 top-0 right-0 text-white rounded-[50px]">
+              <Link href="./" className="flex items-center justify-between gap-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  className="w-6 h-6"
+                >
+                  <path d="M4.5 4.5a3 3 0 00-3 3v9a3 3 0 003 3h8.25a3 3 0 003-3v-9a3 3 0 00-3-3H4.5zM19.94 18.75l-2.69-2.69V7.94l2.69-2.69c.944-.945 2.56-.276 2.56 1.06v11.38c0 1.336-1.616 2.005-2.56 1.06z" />
+                </svg>
+                <span>Take 3D Tour</span>
+              </Link>
+            </div>
+            <div className="absolute left-0 flex w-full items-end justify-start bottom-0 py-5 md:py-10 my-auto px-16 md:h-40 glass-bg2 text-white">
               <div className="flex justify-between gap-3 md:gap-0 flex-col w-full ">
                 <div className="font-raleway flex flex-col gap-2 items-start justify-between">
                   <span className="font-bold md:text-4xl text-2xl capitalize">
@@ -145,8 +175,20 @@ export default function Slider() {
               className="object-cover absolute top-0 left-0"
               layout="fill"
             />
-              
-              <div className="absolute left-0 flex w-full items-end justify-start bottom-0 py-5 md:py-10 my-auto px-16 md:h-40 glass-bg2 text-white">
+             <div className="glass-bg2  absolute py-3 my-5 mx-5 px-5 top-0 right-0 text-white rounded-[50px]">
+              <Link href="./" className="flex items-center justify-between gap-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  className="w-6 h-6"
+                >
+                  <path d="M4.5 4.5a3 3 0 00-3 3v9a3 3 0 003 3h8.25a3 3 0 003-3v-9a3 3 0 00-3-3H4.5zM19.94 18.75l-2.69-2.69V7.94l2.69-2.69c.944-.945 2.56-.276 2.56 1.06v11.38c0 1.336-1.616 2.005-2.56 1.06z" />
+                </svg>
+                <span>Take 3D Tour</span>
+              </Link>
+            </div>
+            <div className="absolute left-0 flex w-full items-end justify-start bottom-0 py-5 md:py-10 my-auto px-16 md:h-40 glass-bg2 text-white">
               <div className="flex justify-between gap-3 md:gap-0 flex-col w-full ">
                 <div className="font-raleway flex flex-col gap-2 items-start justify-between">
                   <span className="font-bold md:text-4xl text-2xl capitalize">
