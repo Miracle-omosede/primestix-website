@@ -41,7 +41,9 @@ function MobileView({ open, setOpen }) {
                   </Link>
                   <ul className="mobile-list flex flex-col gap-2">
                     <li>
-                      <Link href="/" className="link-item">About Damic</Link>
+                      <Link href="/about" onClick={() => {
+              setOpen(!open);
+            }} className="link-item">About Damic</Link>
                     </li>
                     <li>
                       <Link href="/" className="link-item">Founder's Message</Link>
