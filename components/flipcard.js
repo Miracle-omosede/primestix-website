@@ -1,43 +1,43 @@
-// import Image from "next/image";
-// import React from "react";
+import Image from "next/image";
+import React from "react";
 
-// const Flipcard = () => {
-//   return (
-//     <div className="w-[250px] h-[370px] perspective bg-transparent cursor-pointer group">
-//       <div className="relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000 shadow-xl">
-//         <div className="absolute border-2 w-full h-full">
-//           <Image
-//             src="/avatar1.jpg"
-//             width={500}
-//             height={400}
-//             className="object-cover w-full h-full"
-//           />
-//           <div className="w-full flex items-center justify-center">
-//             <button className="absolute bottom-10 py-2 shadow-xl capitalize font-semibold px-4 flex w-auto rounded-[50px] items-center justify-center bg-white text-[#A18830]">
-//               Hover me
-//             </button>
-//           </div>
-//         </div>
-//         <div className="absolute overflow-hidden  my-rotate-y-180 backface-hidden w-full h-full bg-gray-100">
-//           <div className="text-center flex flex-col items-center justify-center h-full">
-//             <Image
-//               src="/avatar2.jpg"
-//               width={500}
-//               height={400}
-//               className="object-cover w-full h-full"
-//             />
-//             <div className="absolute -bottom-20 delay-500 duration-1000 group-hover:bottom-20 scale-0 group-hover:scale-125 text-white">
-//               <h1 className="text-xl font-semibold">Lorem</h1>
-//               <p className="my-2">4.0 ratings</p>
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
+const Flipcard = () => {
+  return (
+    <div className="w-[250px] h-[370px] perspective bg-transparent cursor-pointer group">
+      <div className="relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000 shadow-xl">
+        <div className="absolute border-2 w-full h-full">
+          <Image
+            src="/avatar1.jpg"
+            width={500}
+            height={400}
+            className="object-cover w-full h-full"
+          />
+          <div className="w-full flex items-center justify-center">
+            <button className="absolute bottom-10 py-2 shadow-xl capitalize font-semibold px-4 flex w-auto rounded-[50px] items-center justify-center bg-white text-[#A18830]">
+              Hover me
+            </button>
+          </div>
+        </div>
+        <div className="absolute overflow-hidden  my-rotate-y-180 backface-hidden w-full h-full bg-gray-100">
+          <div className="text-center flex flex-col items-center justify-center h-full">
+            <Image
+              src="/avatar2.jpg"
+              width={500}
+              height={400}
+              className="object-cover w-full h-full"
+            />
+            <div className="absolute -bottom-20 delay-500 duration-1000 group-hover:bottom-20 scale-0 group-hover:scale-125 text-white">
+              <h1 className="text-xl font-semibold">Lorem</h1>
+              <p className="my-2">4.0 ratings</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
 
-// export default Flipcard;
+export default Flipcard;
 
 // import React from 'react';
 // import { Swiper, SwiperSlide } from 'swiper/react';
@@ -93,86 +93,4 @@
 // };
 
 // export default Flipcard;
-
-"use client"
-
-import React, { Component } from "react";
-import Slider from "react-slick";
-import Image from "next/image";
-
-export default class Flipcard extends Component {
-  render() {
-    const settings = {
-      dots: true,
-      infinite: true,
-      speed: 500,
-      slidesToShow: 3,
-      slidesToScroll: 3
-    };
-    return (
-      <div>
-        <h2> Multiple items </h2>
-        <Slider {...settings}>
-          <div>
-          <div className="w-[250px] h-[370px] perspective bg-transparent cursor-pointer group">
-      <div className="relative preserve-3d group-hover:my-rotate-y-180 w-full h-full duration-1000 shadow-xl">
-        <div className="absolute border-2 w-full h-full">
-         <Image
-            src="/avatar1.jpg"
-            width={500}
-            height={400}
-            className="object-cover w-full h-full"
-          />
-          <div className="w-full flex items-center justify-center">
-            <button className="absolute bottom-10 py-2 shadow-xl capitalize font-semibold px-4 flex w-auto rounded-[50px] items-center justify-center bg-white text-[#A18830]">
-              Hover me
-            </button>
-          </div>
-        </div>
-        <div className="absolute overflow-hidden  my-rotate-y-180 backface-hidden w-full h-full bg-gray-100">
-          <div className="text-center flex flex-col items-center justify-center h-full">
-            <Image
-              src="/avatar2.jpg"
-              width={500}
-              height={400}
-              className="object-cover w-full h-full"
-            />
-            <div className="absolute -bottom-20 delay-500 duration-1000 group-hover:bottom-20 scale-0 group-hover:scale-125 text-white">
-              <h1 className="text-xl font-semibold">Lorem</h1>
-              <p className="my-2">4.0 ratings</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-          </div>
-          <div>
-            <h3>2</h3>
-          </div>
-          <div>
-            <h3>3</h3>
-          </div>
-          <div>
-            <h3>4</h3>
-          </div>
-          <div>
-            <h3>5</h3>
-          </div>
-          <div>
-            <h3>6</h3>
-          </div>
-          <div>
-            <h3>7</h3>
-          </div>
-          <div>
-            <h3>8</h3>
-          </div>
-          <div>
-            <h3>9</h3>
-          </div>
-        </Slider>
-      </div>
-    );
-  }
-}
 
