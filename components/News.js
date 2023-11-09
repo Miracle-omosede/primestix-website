@@ -35,7 +35,7 @@ const News = () => {
           disableOnInteraction: false,
         }}
         modules={[Pagination, Navigation, Autoplay]}
-        navigation={true}
+        navigation={false}
         breakpoints={{
           480: {
             slidesPerView: 1,

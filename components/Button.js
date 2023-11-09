@@ -2,8 +2,8 @@ import React from 'react'
 
 const Button = () => {
   return (
-    <button className='hero-btn md:w-auto text-sm md: flex items-center w-2/4'>
-        <span className='capitalize'>Learn more</span>
+    <button className='hero-btn md:w-auto text-xs md:text-sm flex items-center'>
+        <span className='capitalize text-sm'>Learn more</span>
         &nbsp;
         &nbsp;
         <span>

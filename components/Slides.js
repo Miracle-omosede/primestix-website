@@ -12,8 +12,9 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 // import required modules
-import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import { Autoplay, Pagination, Navigation, EffectFade } from "swiper/modules";
 import Image from "next/image";
+import Recents from "./Recents";
 
 export default function Slider() {
   const progressCircle = useRef(null);
@@ -34,7 +35,7 @@ export default function Slider() {
             <br className="md:block hidden " /> feautered and new properties
           </span> */}
       </div>
-      <span className="capitalize text-white my-5 font-semibold text-center text-xl font-raleway px-32">
+      <span className="capitalize text-white my-5 font-semibold text-center text-xl font-raleway px-4 md:px-32">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
         </span>
       <Swiper
@@ -47,9 +48,10 @@ export default function Slider() {
         pagination={{
           clickable: true,
         }}
+        effect={'fade'}
         navigation={false}
         onAutoplayTimeLeft={onAutoplayTimeLeft}
-        modules={[Autoplay, Pagination, Navigation]}
+        modules={[EffectFade ,Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >
         <SwiperSlide>
@@ -78,8 +80,15 @@ export default function Slider() {
                   <span className="font-bold md:text-4xl text-2xl capitalize">
                     Damac Tower views
                   </span>
-                  <span className="capitalize md:text-xl text-md font-semibold">
-                    London, United Kingdom
+                  <span className="capitalize gap-2 flex items-center justify-center md:text-xl text-md font-semibold">
+                    
+                    <span  className="hidden md:flex"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+  <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+</svg>
+</span>
+<span>London, United Kingdom</span>
+                    
                   </span>
                 </div>
                 <div>
@@ -88,7 +97,7 @@ export default function Slider() {
                     className="w-full flex items-center md:justify-start justify-center gap-3 my-2 hover:gap-6 font-bold font-raleway transition-all duration-300 text-sm text-white"
                   >
                     <span className="capitalize">Learn more</span>
-                    <span>
+                    <span >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
@@ -131,13 +140,20 @@ export default function Slider() {
               </Link>
             </div>
             <div className="absolute left-0 flex w-full items-end justify-start bottom-0 py-5 md:py-10 my-auto px-16 md:h-40 glass-bg2 text-white">
-              <div className="flex justify-between gap-3 md:gap-0 flex-col w-full ">
+            <div className="flex justify-between gap-3 md:gap-0 flex-col w-full ">
                 <div className="font-raleway flex flex-col gap-2 items-start justify-between">
                   <span className="font-bold md:text-4xl text-2xl capitalize">
                     Damac Tower views
                   </span>
-                  <span className="capitalize md:text-xl text-md font-semibold">
-                    London, United Kingdom
+                  <span className="capitalize gap-2 flex items-center justify-center md:text-xl text-md font-semibold">
+                    
+                    <span  className="hidden md:flex"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+  <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+</svg>
+</span>
+<span>London, United Kingdom</span>
+                    
                   </span>
                 </div>
                 <div>
@@ -189,13 +205,20 @@ export default function Slider() {
               </Link>
             </div>
             <div className="absolute left-0 flex w-full items-end justify-start bottom-0 py-5 md:py-10 my-auto px-16 md:h-40 glass-bg2 text-white">
-              <div className="flex justify-between gap-3 md:gap-0 flex-col w-full ">
+             <div className="flex justify-between gap-3 md:gap-0 flex-col w-full ">
                 <div className="font-raleway flex flex-col gap-2 items-start justify-between">
                   <span className="font-bold md:text-4xl text-2xl capitalize">
                     Damac Tower views
                   </span>
-                  <span className="capitalize md:text-xl text-md font-semibold">
-                    London, United Kingdom
+                  <span className="capitalize gap-2 flex items-center justify-center md:text-xl text-md font-semibold">
+                    
+                    <span className="hidden md:flex" ><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+  <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+</svg>
+</span>
+<span>London, United Kingdom</span>
+                    
                   </span>
                 </div>
                 <div>
@@ -222,7 +245,7 @@ export default function Slider() {
                     </span>
                   </Link>
                 </div>
-              </div>
+              </div> 
             </div>
           </div>
         </SwiperSlide>
@@ -257,6 +280,7 @@ export default function Slider() {
           </span>
         </Link>
       </div> */}
+      <Recents/>
     </div>
   );
 }

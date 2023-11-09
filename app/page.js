@@ -18,7 +18,7 @@ export default function Home() {
       <div className="relative w-full bg-pattern h-auto px-5 py-40">
         <Slider />
       </div>
-      <div className="relative bg-[#47391e] pt-52 ">
+      <div className="relative bg-[black] pt-52 ">
         <News />
       </div>
       <OurTeam />
