@@ -10,7 +10,7 @@ const about = () => {
     <div className='flex flex-col font-raleway max-w-[1100px] w-full mx-auto py-20'>
         <div className='text-white'>
           <h1 className='text-4xl font-semibold'>About PRIMESTIX</h1>
-          <p className='capitalize text-2xl'>Our story</p>
+          <p className='capitalize text-2xl italic'>Our story</p>
         </div>
       </div>
 
@@ -32,12 +32,12 @@ const about = () => {
 
               <div className='flex flex-row justify-between text-xl font-bold'>
                 <div className='' >
-                  <div className='text-3xl py-2 text-[#AD8F31]'>46,000</div>
+                  <div className='text-5xl py-2 text-[#AD8F31]'>46,000</div>
                   <Divider/>
                   <div className='uppercase font-semibold py-3'>homes delivered.</div>
                 </div>
                 <div>
-                  <div className='text-3xl py-2 text-[#AD8F31]'>33,000</div>
+                  <div className='text-5xl py-2 text-[#AD8F31]'>33,000</div>
                   <Divider/>
                   <div className='uppercase font-semibold py-3'>in planning and progress</div>
                 </div>
@@ -68,7 +68,7 @@ const about = () => {
           <div className='h-[2px] w-full bg-black'/>
           <div className="w-full font-raleway ">
                     <Link
-                      href="/page"
+                      href="/founder"
                       className="w-full flex items-center justify-between py-3 text-black font-bold"
                     >
                       <span className="uppercase">Learn more</span>
